@@ -6,7 +6,7 @@ const connectDatabase = require("./db/database");
 process.on("uncaughtException", (err) => {
     console.log(`Error: ${err.message}`);
     console.log("Shutting down the server due to Uncaught Exception");
-    process.exit(1);
+    // process.exit(1);
 })
 
 //connecting to database
@@ -21,7 +21,7 @@ connectDatabase();
 
 //create server
 const server = app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port: ${process.env.PORT}`);
+    console.log(`Server is running on http://localhost: ${process.env.PORT}`);
 });
 
 
