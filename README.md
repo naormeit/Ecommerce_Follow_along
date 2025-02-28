@@ -212,4 +212,25 @@ In this milestone, we focused on defining the structure of product data and crea
   Shop Profiles: Restrict product uploads to users with a registered shop profile.
   Image Upload Handling: Implement a cloud-based solution (e.g., Cloudinary, AWS S3) for better image management.
 
-  
+## Milestone 11: Fetching and Displaying Product Data
+
+In this milestone, we focused on retrieving product data from the backend and dynamically displaying it in the frontend. Key achievements include:
+
+**1. Backend:** Creating an API Endpoint to Fetch All Products
+                  Developed a GET endpoint (/api/products) in the backend to send all product data to the frontend.
+                  Implemented MongoDB queries using Mongoose to retrieve all stored products.
+                  Ensured error handling to manage potential issues in fetching data.
+
+**2. Frontend:** Fetching Data from API
+                  Created an API call function using fetch or axios in React to retrieve product data from the backend.
+                  Managed the fetched data using React useState and useEffect hooks to ensure dynamic updates.
+
+**3. Displaying Products Dynamically**
+  Passed the fetched product data to a ProductCard component.
+  Used the product details (name, image, price, etc.) as props to display them dynamically.
+  Applied responsive CSS styling to create a visually appealing product grid layout.
+
+**4. Future Enhancements & Experimentation:**
+  Loading States: Implemented a loading spinner while fetching product data.
+  Error Handling: Displayed meaningful error messages in case of API failure.
+  Pagination & Filters: Considered adding pagination and filtering options for better user experience.
