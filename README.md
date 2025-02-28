@@ -1,6 +1,7 @@
 # Ecommerce Follow-Along  
 
 ## Milestone 1: Project Overview  
+
 In our first milestone, we had an enlightening session where we laid the groundwork for our E-Commerce application. Here are some of the key takeaways:  
 
 **Exploring the MERN Stack**: We kicked things off by understanding the MERN stack—what it is, its components, and why it's such a popular choice for building full-stack applications. The beauty of this stack is that we can write our code in JavaScript throughout, making our development experience smoother and more seamless.
@@ -16,6 +17,7 @@ In our first milestone, we had an enlightening session where we laid the groundw
   
 
 ## Milestone 2: Project Setup and Login Page
+
 In this milestone, we focused on setting up the initial front-end structure and implementing the login page for the application. Key achievements include:
 
 **Front-End Framework:-** Set up the React framework with Vite for a fast and modern development experience.
@@ -34,6 +36,7 @@ In this milestone, we focused on setting up the initial front-end structure and 
 This milestone lays the groundwork for creating the front-end interface and interaction logic for the application.
 
 ## Milestone 3: Project Setup for Backend
+
 In this milestone, the foundational backend structure for the e-commerce application was successfully established. Key achievements include:
 
 **Backend Folder Structure:-** Organized the project into clearly defined folders (config, controller, db, middleware, model, and utility) to ensure scalability and maintainability.
@@ -74,6 +77,7 @@ This milestone provides the necessary backend infrastructure to manage user data
 
 
 ## Milestone 5: Creating the Signup Page
+
 In this milestone, we focused on developing the signup page to enable users to create an account within the application. Key achievements include:
 
 **Signup Page Implementation:-** - Developed the Signup.jsx component with a user-friendly interface for account registration.
@@ -234,3 +238,27 @@ In this milestone, we focused on retrieving product data from the backend and dy
   Loading States: Implemented a loading spinner while fetching product data.
   Error Handling: Displayed meaningful error messages in case of API failure.
   Pagination & Filters: Considered adding pagination and filtering options for better user experience.
+
+## Milestone 12: Filtering Products by User Email and Displaying Data
+
+In this milestone, we focused on filtering products based on the user's email and sending only relevant product data to the frontend. Key achievements include:
+
+**1. Backend: Creating a Filtered API Endpoint**
+  Developed a GET endpoint (/api/products/:email) to return products associated with a specific user email.
+  Used Mongoose to query the database and fetch only the products uploaded by the provided email.
+  Implemented error handling to manage scenarios where no products match the email.
+
+**2. Frontend: Fetching Filtered Data from API**
+  Created a function in React to fetch only products uploaded by the logged-in user.
+  Used Axios or Fetch API to make requests to the backend with the logged-in user's email.
+  Managed product data using useState and useEffect hooks.
+
+**3. Displaying Filtered Products Dynamically**
+  Passed the fetched filtered product data to a ProductCard component.
+  Rendered product details such as name, image, price, and description dynamically.
+  Ensured a clean and structured UI using CSS and responsive layout techniques.
+
+**4. Future Enhancements & Experimentation:**
+  Role-Based Access: Only allow authorized users (e.g., shop owners or admins) to upload and view specific products.
+  Advanced Filtering: Extend filtering options to include categories, price ranges, and product availability.
+  Search Functionality: Implement a search bar for users to quickly find their uploaded products.
