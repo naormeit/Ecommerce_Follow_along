@@ -262,3 +262,29 @@ In this milestone, we focused on filtering products based on the user's email an
   Role-Based Access: Only allow authorized users (e.g., shop owners or admins) to upload and view specific products.
   Advanced Filtering: Extend filtering options to include categories, price ranges, and product availability.
   Search Functionality: Implement a search bar for users to quickly find their uploaded products.
+
+## Milestone 13: Updating Product Data and Form Auto-Fill
+
+In this milestone, we focused on implementing update functionality for product data, allowing users to modify existing product information through an editable form. Key achievements include:
+
+  **Backend: Creating an Update Endpoint**
+    Developed a PUT endpoint to receive and update existing product data in MongoDB.
+    Used Mongoose to find the product by its ID and update its fields.
+    Ensured data validation to maintain data integrity and prevent errors during updates.
+    Handled potential errors, such as cases where the product is not found.
+
+  **Frontend: Form Auto-Fill and Edit Functionality**
+    Added an Edit button to each product card.
+    Clicking the Edit button opens a form pre-filled with the existing product details.
+    Users can modify the form fields and save changes to update the product.
+    Used React state and useEffect to manage form data and populate it with the product’s current details.
+
+  **UI and UX Enhancements**
+    Ensured a responsive layout for the edit form, providing a user-friendly experience.
+    Added error messages for invalid data and success notifications on successful updates.
+
+  **Future Enhancements & Experimentation**
+    Admin-Only Access: Restrict update functionality to authorized users, such as shop owners or admins.
+    Real-Time Updates: Implement real-time data updates on the product listing page.
+    Optimized Form Design: Enhance the form with file uploads for updating product images and improved field validation.
+
