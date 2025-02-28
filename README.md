@@ -156,3 +156,29 @@ In this milestone, we focused on creating a visually appealing and functional ho
 **4. Code Submission:**
   Pushed the updated code to the GitHub repository.
   Verified that the repository is publicly accessible for evaluation.
+
+## Milestone 9: Creating the Product Form
+
+In this milestone, we focused on building a form that allows users to add products, including support for multiple product images. Key achievements include:
+
+**1. Product Form Implementation:**
+  Designed and developed a form to capture essential product details, such as:
+    Product Name
+    Description
+    Price
+    Category
+    Multiple Product Images (file upload support)
+
+**2. Image Upload Handling:**
+  Implemented functionality to allow multiple product images to be uploaded.
+  Ensured proper validation for image formats and file sizes.
+
+**3. Data Management:**
+  Configured state management to handle form inputs efficiently.
+  Validated user inputs before submission to ensure accurate product data.
+
+**4. Future Enhancements & Experimentation:**
+  Considered additional features for better access control:
+  Admin Access: Restrict product creation to admin users only.
+  Shop Profiles: Implemented a feature where only users with shop profiles can upload products.
+  Enhanced UI/UX: Improved form design for a seamless user experience.
