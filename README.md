@@ -312,3 +312,18 @@ In this milestone, we focused on implementing delete functionality for product d
   Role-Based Permissions: Allow only authorized users (e.g., admins) to delete products.
   Batch Deletion: Add functionality to delete multiple products at once.
 
+## Milestone 15: Creating a Responsive Navbar
+
+In this milestone, we focused on building a reusable and responsive Nav component that enhances navigation across multiple pages of the e-commerce application. Key achievements include:
+
+**Frontend: Creating the Nav Component**
+  Designed a new Nav component with navigation links to all key pages:
+  Home
+  My Products
+  Add Product
+  Cart
+**Implemented smooth navigation between these pages using React Router.**
+
+**Responsive Design**
+  Used CSS Flexbox and media queries to ensure the Navbar is fully responsive on all screen sizes (mobile, tablet, desktop).
+  Added a hamburger menu for smaller screens to toggle the navigation links.
