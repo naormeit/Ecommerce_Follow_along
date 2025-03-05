@@ -351,3 +351,225 @@ Passed the product ID through the URL to fetch and display product details on th
   Implemented a function to handle adding the product to the cart, updating the cart state in the application.
 =======
 Batch Deletion: Add functionality to delete multiple products at once.
+
+## Milestone 17: Adding Products to Cart
+
+In this milestone, we focused on implementing the functionality to add products to the cart. Key achievements include
+
+**Frontend: Adding Products to Cart**
+  Designed a new Cart component that displays the products added to the cart, along with their
+  Implemented a function to handle adding products to the cart, updating the cart state in the application.
+  Used React state to manage the cart items and their quantities.
+
+**Backend: API Integration**
+  Created a new API endpoint to handle adding products to the cart.
+  Implemented server-side logic to update the cart state in the database.
+  
+**State Management and API Integration**
+  Fetched the updated cart state from the backend after adding a product.
+  Managed the cart state using React state.
+
+
+## Milestone 18: Creating an end point for cart page
+
+In this milestone, we implemented a backend endpoint to fetch all the products inside a user's cart. This functionality is essential for displaying the cart contents on the cart page.
+
+**Backend: API Integration**
+  Created a new API endpoint to fetch all products in a user's cart.
+  Implemented server-side logic to retrieve the cart contents from the database.
+
+**Frontend: Cart Page**
+  Designed a new Cart Page component that displays the products in the user's cart.
+  Used React Router to navigate to the Cart Page.
+
+**State Management and API Integration**
+  Fetched the cart contents from the backend using the API endpoint. The final product will have the following features:
+  A user can view all products on the homepage.
+  A user can view product details on a dedicated product info page.
+  A user can add products to their cart.
+  A user can view their cart contents on the cart page.
+
+
+## Milestone 19: Shopping Cart UI with API Endpoint for Updating Product Quantity
+
+In this milestone, we focused on implementing the shopping cart UI and API endpoint for updating product quantity.
+
+**Frontend: Shopping Cart UI**
+  Designed a new Cart component that displays the products in the user's cart, along with their quantities
+  Implemented a function to handle updating the quantity of a product in the cart
+  Used React state to manage the cart items and their quantities
+
+**Backend: API Endpoint for Updating Product Quantity**
+  Created a new API endpoint to update the quantity of a product in the cart
+  Implemented server-side logic to update the cart state in the database
+
+**State Management and API Integration**
+  Fetched the updated cart state from the backend after updating a product quantity The final product will have the following features:
+  A user can view all products on the homepage
+  A user can view product details on a dedicated product info page
+  A user can add products to their cart
+  A user can view their cart contents on the cart page
+  A user can update the quantity of products in their cart
+
+
+## Milestone 20: Building a Profile Page Frontend with User Data Endpoint
+
+In this milestone, we implemented the frontend for the profile page, fetching user data from the backend API
+
+**Frontend: Profile Page**
+  Designed a new Profile Page component that displays user data
+  Implemented a function to fetch user data from the backend API
+  Used React state to manage user data
+
+**Backend: API Endpoint for User Data**
+  Created a new API endpoint to fetch user data
+  Implemented server-side logic to retrieve user data from the database
+
+**State Management and API Integration**
+  Fetched user data from the backend API The final product will have the following features:
+  A user can view their profile page
+  A user can view their user data on the profile page
+
+
+## Milestone 21: Implementing the Address Form Page
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+Create a frontend form to collect user address details.
+Store address information using state management.
+Implement navigation from the Profile Page to the Address Form.
+
+**1. Frontend Updates: Address Form Page**
+  Designed an address input form to collect:
+  Country
+  City
+  Address Line 1
+  Address Line 2
+  ZIP Code
+  Address Type (Home/Work/Other)
+  Created a state to store and manage the form input.
+  Ensured proper form validation for required fields.
+
+**2. Navigation & User Flow**
+  Clicking "Add Address" on the Profile Page redirects to the Address Form.
+  Implemented smooth navigation handling to improve user experience.
+
+**3. Future Enhancements & Experimentation**
+  Save Address to Database: Store the address using a backend API.
+  Auto-fill Option: Enable users to update an existing address instead of entering a new one.
+  Google Maps API Integration: Allow users to select their address using a map.
+
+
+## Milestone 22: Storing User Address in Database
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+**Create a backend endpoint to receive and store user address data.**
+  Update the User collection to include an address array.
+  Learn how to store and manage multiple addresses for a user.
+
+**1. Backend Updates: Address Storage Endpoint**
+  Created a POST endpoint (/api/user/address) to receive address data from the frontend.
+  Validated the received address data before storing it in the database.
+  Updated the User model to include an address array for storing multiple addresses.
+  Implemented error handling to ensure data integrity.
+
+**2. Frontend Integration**
+  Modified the Address Form to send a POST request to the new backend endpoint.
+  Ensured proper state management to handle form input.
+  Provided user feedback (e.g., success message) upon successful address submission.
+
+**3. Future Enhancements & Experimentation**
+  Edit Address Feature: Allow users to modify their saved addresses.
+  Delete Address Option: Provide users the ability to remove an address.
+  Set Default Address: Implement functionality to set a preferred/default address.  
+
+
+## Milestone 23: Implementing Order Placement and Address Selection
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+
+  Add a "Place Order" button inside the cart page.
+  Create a Select Address Page where users can choose a delivery address.
+  Write a Mongoose schema to store order details in the database.
+
+**1. Frontend Updates: Cart Page & Address Selection**
+  Added a "Place Order" button inside the cart page.
+  When clicked, it navigates to the Select Address Page.
+  Displayed all saved addresses for the user.
+  Allowed users to select an address for order delivery.
+
+**2. Backend Updates: Order Schema & Storage**
+  Created a Mongoose schema to store order details, including:
+  User ID (to associate orders with users)
+  Product details (items in the cart)
+  Selected delivery address
+  Order status (pending, shipped, delivered)
+  Total price
+  Timestamp
+  Implemented an endpoint to store orders in the database.
+
+**3. Future Enhancements & Experimentation**
+  Order Confirmation Page: Display order details after selection.
+  Payment Integration: Connect payment gateways for seamless checkout.
+  Order Tracking: Allow users to track the status of their orders.  
+
+
+## Milestone 24: Order Confirmation Page
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+
+  Create an Order Confirmation Page.
+  Display ordered *products, **delivery address, and *total price.
+  Implement a "Place Order" button for final confirmation.
+
+**1. Frontend Updates: Order Confirmation Page**
+  Designed an Order Summary Section displaying:
+  All products being ordered with names, images, and prices.
+  Selected delivery address chosen in the previous step.
+  Total order value, summing up the prices of all cart items.
+  Placed a "Place Order" button at the bottom to confirm the purchase.
+
+**2. Backend Updates (Future Enhancements)**
+  Store order details in the database upon confirmation.
+  Implement an order status tracking system (Pending, Shipped, Delivered).
+  Integrate payment gateways for a complete checkout experience.
+
+**3. Future Enhancements & Experimentation**
+  Order Summary Styling: Improve UI/UX with a clean and structured layout.
+  Payment Integration: Add payment methods for real transactions.
+  Order Confirmation Email: Send users a confirmation email after placing an order.
+
+## Milestone 25: Creating an backend endpoint that will help in placing the order. 
+
+In this milestone, you will focus on creating a backend endpoint that will help in placing orders.
+
+By the end of this milestone, you will:
+
+- Create a backend endpoint that facilitates placing orders.
+- Learn how to retrieve user details using the user's email.
+- Understand how to use MongoDB to store order data in the `order` collection.
+
+
+1. **Create an Endpoint:**  
+   Create an endpoint that will receive the following details:
+   - Product details
+   - User details (including address information)
+
+2. **Retrieve User Information:**  
+   Using the provided user email, retrieving the `_id` of the user.
+
+3. **Handle Orders:**  
+   For each product, the order will be different, but the shipping address will remain the same.
+
+4. **Store Order Details:**  
+   Using the `order` schema you created earlier, store the order details in MongoDB's `order` collection.
+
+This milestone will help us in understanding how to create an endpoint for placing an order and how to store the order information efficiently in a database.
+
