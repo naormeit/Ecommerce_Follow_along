@@ -327,3 +327,4 @@ In this milestone, we focused on building a reusable and responsive Nav componen
 **Responsive Design**
   Used CSS Flexbox and media queries to ensure the Navbar is fully responsive on all screen sizes (mobile, tablet, desktop).
   Added a hamburger menu for smaller screens to toggle the navigation links.
+
