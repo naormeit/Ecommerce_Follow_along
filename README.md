@@ -349,8 +349,8 @@ Passed the product ID through the URL to fetch and display product details on th
   Fetched product details from the backend using the product ID.
   Managed the selected quantity using React state.
   Implemented a function to handle adding the product to the cart, updating the cart state in the application.
-=======
-Batch Deletion: Add functionality to delete multiple products at once.
+  
+  Batch Deletion: Add functionality to delete multiple products at once.
 
 ## Milestone 17: Adding Products to Cart
 
