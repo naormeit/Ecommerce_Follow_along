@@ -573,3 +573,33 @@ By the end of this milestone, you will:
 
 This milestone will help us in understanding how to create an endpoint for placing an order and how to store the order information efficiently in a database.
 
+## Milestone 26: Fetching User Orders
+
+Learning Goals 🎯
+
+By the end of this milestone, you will:
+
+**Create an API endpoint to retrieve all orders of a specific user.**
+  Fetch the user's _id from the database using their email.
+  Retrieve and send all orders associated with that user.
+
+**1. Backend Updates: Fetch User Orders Endpoint**
+  Developed a GET endpoint (/api/orders/:email) to:
+  Receive the user’s email as a parameter.
+  Retrieve the user’s _id from the database using the email.
+  Query the orders collection to get all orders linked to that _id.
+  Return the list of orders in the response.
+
+**2. Data Flow**
+  Frontend sends a request with the user’s email to the backend.
+  Backend retrieves the user's _id using their email.
+  Orders collection is queried to fetch all orders related to the _id.
+  Response contains the list of orders, including:
+  Product details (name, image, price, etc.).
+  Order status (Pending, Shipped, Delivered).
+  Selected delivery address.
+
+**3. Future Enhancements & Experimentation**
+  Order Filtering: Allow users to filter orders by status (e.g., Completed, Pending).
+  Pagination: Implement pagination for users with multiple orders.
+  Order Cancellation: Add functionality to cancel an order if it's not yet shipped.
