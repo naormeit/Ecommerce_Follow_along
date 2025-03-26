@@ -603,3 +603,14 @@ By the end of this milestone, you will:
   Order Filtering: Allow users to filter orders by status (e.g., Completed, Pending).
   Pagination: Implement pagination for users with multiple orders.
   Order Cancellation: Add functionality to cancel an order if it's not yet shipped.
+
+## Milestone 27: My orders page
+
+Learning Goals
+By completing this milestone, you will learn how to:
+
+- Create a frontend page to display all user orders.
+- Fetch user orders by making a GET request to the backend.
+- Pass the user email to the API to retrieve their orders.
+- Display all fetched orders in a structured format.
+- Add My Orders to the navigation for easy access.
