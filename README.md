@@ -614,3 +614,25 @@ By completing this milestone, you will learn how to:
 - Pass the user email to the API to retrieve their orders.
 - Display all fetched orders in a structured format.
 - Add My Orders to the navigation for easy access.
+
+## Milestone 28: Order Cancellation Feature
+
+Learning Goals 🎯
+By the end of this milestone, you will:
+
+- Enable users to cancel their placed orders.
+- Implement order status management in the backend.
+- Ensure the UI reflects canceled orders properly.
+
+1. Backend Updates: Cancel Order Endpoint
+  -Created a PUT endpoint (/api/orders/cancel/:id).
+  -The endpoint:
+    -Receives the order ID from the request.
+    -Finds the corresponding order in the database.
+    -Updates the order status to "Canceled".
+    -Saves the updated order in MongoDB.
+
+2. Handling Order Status & UI Updates
+  -Orders marked as Canceled are displayed with a "Canceled" status.
+  -The cancel button is hidden for already canceled orders.
+  -Implemented real-time UI updates after cancellation.
